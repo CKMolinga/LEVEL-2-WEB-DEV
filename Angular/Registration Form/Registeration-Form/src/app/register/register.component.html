@@ -1,0 +1,85 @@
+<div id="form1" *ngIf="fullstack">
+    <h1 class="full_stack">Full Stack</h1>
+    <form action="">
+        <label for="firstName" name="firstName">First Name:
+            <input type="text" name="firstName" placeholder="First Name" required>  
+        </label>
+        <br><br>
+        <label for="lastName" name="lastName">Last Name:
+            <input type="text" name="lastName" placeholder="Last Name" required>
+        </label>
+        <br><br>
+        <label for="address" name="address">Address:
+            <input type="text" name="address" placeholder="Address">
+        </label>
+        <br><br>
+        <label for="tel" name="tel">Phone Number:
+            <input type="tel" name="telephone" required>
+        </label>
+        <br><br>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<div id="form2" *ngIf="cyberscurity">
+    <h1 class="full_stack">Cybersecurity and Ethical Hacking</h1>
+    <form action="">
+        <label for="firstName" name="firstName">First Name:
+            <input type="text" name="firstName" placeholder="First Name" required>  
+        </label>
+        <br><br>
+        <label for="lastName" name="lastName">Last Name:
+            <input type="text" name="lastName" placeholder="Last Name" required>
+        </label>
+        <br><br>
+        <label for="address" name="address">Address:
+            <input type="text" name="address" placeholder="Address">
+        </label>
+        <br><br>
+        <label for="tel" name="tel">Phone Number:
+            <input type="tel" name="telephone" required>
+        </label>
+        <br><br>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<div id="form3" *ngIf="digitalMarketing">
+    <h1 class="full_stack">Digital Marketing</h1>
+    <form action="">
+
+        <label for="firstName" name="firstName">First Name:
+            <input type="text" name="firstName" placeholder="First Name" required>  
+        </label>
+        <br><br>
+        <label for="lastName" name="lastName">Last Name:
+            <input type="text" name="lastName" placeholder="Last Name" required>
+        </label>
+        <br><br>
+        <label for="address" name="address">Address:
+            <input type="text" name="address" placeholder="Address">
+        </label>
+        <br><br>
+        <label for="tel" name="tel">Phone Number:
+            <input type="tel" name="telephone" required>
+        </label>
+        <br><br>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<form action="">
+    <label for="fullstack">Fullstack
+    <input class="radio" type="checkbox" name="option" (change)='showForm1()'>
+</label>
+    <label for="fullstack">Cybersecurity
+    <input class="radio" type="checkbox" name="option" (change)='showForm2()'>
+</label>
+    <label for="fullstack">Digital Marketing
+    <input class="radio" type="checkbox" name="option" (change)='showForm3()'>
+</label>
+
+</form>

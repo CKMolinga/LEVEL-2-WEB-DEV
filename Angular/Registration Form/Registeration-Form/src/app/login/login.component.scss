@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+div.login {
+    font-family: 'Poppins', sans-serif;
+    width: 55%;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-image: linear-gradient(to right top, #d16ba5, #e96993, #fa6c7b, #ff7761, #ff8744, #ff905b, #ff9970, #ffa384, #ffb5ba, #ffcee3e8, #f9e8fae0, #e0d2d2c7);
+}
+
+.form-box {
+    background-color: #fff;
+    width: 60%;
+    height: 80%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 5px;
+    height: 30px;
+    width: 70%;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: 1px 1px 9px 0px rgba(172, 169, 187, 0.75);
+    -webkit-box-shadow: 1px 1px 9px 0px rgba(172, 169, 187, 0.75);
+    -moz-box-shadow: 1px 1px 9px 0px rgba(172, 169, 187, 0.75);
+}
+
+input:focus {
+    border: #fff;
+}
+
+button {
+    border: none;
+    color: #fff;
+    background-color: #5056c6;
+    border: 1px solid #ACA9BB;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 5px;
+    height: 35px;
+    width: 70%;
+}
+
+button:hover {
+    background-color: #454ef1;
+}

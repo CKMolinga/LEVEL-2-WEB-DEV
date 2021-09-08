@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bulding websites with Vue and Firebase</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <link rel="stylesheet" href="">
+
+    <style>
+        .box {
+            padding: 100px 0;
+            width: 400px;
+            text-align: center;
+            background: #ddd;
+            margin: 20px;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Hello vue</p>
+
+    <div id="app">
+        <div v-if="showBooks">
+            <p>{{ title }} - {{ author }} - {{ age }}</p>
+        </div>
+        <button @click="toggleShowBooks">
+            <span v-if="showBooks">Hide Books</span>
+            <!-- <span v-if="!showBooks">Show Books</span> -->
+            <span v-else>Show Books</span>
+        </button>
+
+        <div v-show="showBooks">Currently showing books</div>
+
+        <!-- <button v-on:click="age++">Increase age</button>
+        <button v-on:click="age--">Decrease age</button>
+
+        <div @click="changeTitle('Oathbringer')">Change book title</div> -->
+
+        <br>
+        <!-- Mouse Events  -->
+        <div class="box" @mouseover="handleEvent">Mouseover</div>
+        <div class="box" @mouseleave="handleEvent">Mouseleave</div>
+        <div class="box" @dblclick="handleEvent">Doubleclick</div>
+        <div class="box"></div>
+
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="app.js" async defer></script>
+</body>
+
+</html>

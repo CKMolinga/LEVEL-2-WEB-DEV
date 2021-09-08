@@ -1,0 +1,19 @@
+<div class="login">
+    <div class="form-box">
+        <h1>Login account</h1>
+        <p>Dont have an account? <a href="#">Signup</a></p>
+        <form action="#">
+
+            <input id="username" type="text" name="username" [(ngModel)]="username" placeholder="Username or Email" required>
+
+            <br><br>
+
+            <input id="password" type="password" name="password" [(ngModel)]="password" placeholder="password" required>
+
+            <br><br>
+            <button type="submit" name="login" (click)="submitform()">Login</button>
+            <!-- <button type="submit" name="login" (click)="submitform()" [disabled]="!isenabled">Login</button> -->
+
+        </form>
+    </div>
+</div>
